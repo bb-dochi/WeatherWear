@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.user.ww_test2.MainActivity">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/location"/>
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/currentDate"/>
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:id="@+id/weatherIcon"
+        android:layout_width="250dp"
+        android:layout_height="250dp" />
+    <TextView
+        android:layout_marginTop="-30dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather"/>
+    <TextView
+        android:layout_marginTop="-2dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon1"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon2"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/w2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon3"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/w3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/icon4"
+                android:layout_width="65dp"
+                android:layout_height="65dp" />
+            <TextView
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:id="@+id/w4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:onClick="getStyle"
+            android:text="Today's Style"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</LinearLayout>
